@@ -1,0 +1,14 @@
+[
+  {
+    "dllpath": "AutoFill.dll",
+    "name": "autofill",
+    "namepretty": "Auto Fill",
+    "version": "0.2",
+    "enabled": true,
+    "marksgamemodded": true,
+    "compatibleversions": [
+      "0.7.0"
+    ],
+    "about": "Automatically fills your inventory if you use up a block"
+  }
+]
