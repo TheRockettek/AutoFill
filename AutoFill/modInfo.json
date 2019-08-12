@@ -3,7 +3,7 @@
     "dllpath": "AutoFill.dll",
     "name": "autofill",
     "namepretty": "Auto Fill",
-    "version": "0.2",
+    "version": "0.3",
     "enabled": true,
     "marksgamemodded": true,
     "compatibleversions": [
