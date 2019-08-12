@@ -8,9 +8,9 @@ namespace AutoFill
         [ModLoader.ModCallback(ModLoader.EModCallbackType.OnPlayerClicked, "ImRock.AutoFill.OnPlayerClickedType")]
         public static void OnPlayerClicked(Players.Player player, Shared.PlayerClickedData playerClickedData)
         {
-            if (player.ActiveColony != null && playerClickedData.HitType == Shared.PlayerClickedData.EHitType.Block && playerClickedData.ConsumedType == Shared.PlayerClickedData.EConsumedType.ChangedBlock && playerClickedData.IsConsumed && ItemTypes.TryGetType(playerClickedData.TypeToBuild, out ItemTypes.ItemType block))
+            if (player.ActiveColony != null && playerClickedData.HitType == Shared.PlayerClickedData.EHitType.Block && playerClickedData.ConsumedType == Shared.PlayerClickedData.EConsumedType.ChangedBlock && playerClickedData.IsConsumed && ItemTypes.TryGetType(playerClickedData.TypeSelected, out ItemTypes.ItemType block))
             {
-                if (block.ParentItemType != null)
+                while (block.ParentItemType != null)
                 {
                     block = block.ParentItemType;
                 }
